@@ -11,7 +11,7 @@
 
 As a student, I want to check whether a future time interval in Study Room A101 is free, without creating a reservation. This is a fictional, read-only demonstration. The same two daily bookings, 09:00–10:00 and 13:00–14:00, are used by both implementations. Intervals ending exactly when another booking starts are available.
 
-The [Appsmith demonstration](https://app.appsmith.com/app/smart-campus-room-checker-practice-12/page1-6b080721ac6b328c4f872bf6) is deployed privately. A grader needs workspace access to open it. The React/Vite source and automated tests are available locally for placement in the public repository.
+The [Appsmith demonstration](https://app.appsmith.com/app/smart-campus-room-checker-practice-12/page1-6b080721ac6b328c4f872bf6) is deployed privately. A grader needs workspace access to open it. The React/Vite source and automated tests are in the [public repository](https://github.com/muenjmtst/software-engineering-practice-12).
 
 ## Shared acceptance criteria
 
@@ -106,5 +106,5 @@ AI helped interpret the task, adapt the previous React application, configure Ap
 
 ## Submission status and required checks
 
-This report is a draft for the required public repository. **Do not submit the ZIP or a OneDrive/WinRAR link.** The published Appsmith URL is private; a public live demo and Appsmith export are still required by the submission slide. A React running-interface screenshot is still missing because this environment denied the local server and blocked browser navigation to local files. The Appsmith T1–T8 response captures above are genuine. The public GitHub/GitLab/Bitbucket repository with source, report and screenshots has not yet been created because GitHub requires sign-in in the available browser. The student supplied class time and model; a separate application version was not recorded.
+The [public repository](https://github.com/muenjmtst/software-engineering-practice-12) now contains the React source, report, and Appsmith screenshots. **Do not submit the ZIP or a OneDrive/WinRAR link.** The Appsmith URL remains private; a publicly accessible live demo and Appsmith export are still required by the submission slide. A React running-interface screenshot is still missing because this environment denied the local server and blocked browser navigation to local files. The Appsmith T1–T8 response captures above are genuine. The student supplied class time and model; a separate application version was not recorded.
 
