@@ -79,6 +79,12 @@ The following captures are consecutive portions of the same Appsmith Response pa
 
 ![Appsmith invalid duration](evidence/appsmith-invalid.jpg)
 
+### Running React interface
+
+**Available** — 27 November, 10:30–11:30. I ran the React application locally and checked the result in its browser interface on 26 November 2026.
+
+![React available interval](evidence/react-available.png)
+
 ## Platform comparison and recommendation
 
 | Criterion | React and Vite | Appsmith |
@@ -86,7 +92,7 @@ The following captures are consecutive portions of the same Appsmith Response pa
 | Construction | Extended the existing TypeScript/React application | Configured widgets and a JSObject in the browser |
 | Validation | Eight shared cases; 121 total tests, lint, typecheck and build | Eight JSObject assertions; four live interface outcomes observed |
 | Debugging | Local tests and build errors | JSObject Run response and result text |
-| Portability | Source archive and npm scripts | Public application link; export command succeeded, but the downloaded JSON was not captured in the repository |
+| Portability | Source, npm scripts and a running-interface screenshot | Public application link and [Appsmith export JSON](appsmith/Smart%20Campus%20Room%20Checker%20%E2%80%94%20Practice%2012.json) |
 | Security | No backend, secrets or personal data | No datasource or secrets; application public access is on |
 | Measured time or cost | Not measured | Not measured |
 
@@ -96,7 +102,7 @@ The React interface accepts a manual clock override for same-day checks; Appsmit
 
 ## Security review and limitations
 
-Both demonstrations use fictional booking data and create no reservations. Input is validated for date and duration. React renders result text as text; Appsmith displays fixed result messages. Appsmith's **Make application public** option was enabled on 26 November 2026 ([screenshot](evidence/appsmith-public-access.png)). No user was invited; its invitation dialog warns that invitations may grant access to all applications in the workspace. Anonymous access was not checked from a separate account.
+Both demonstrations use fictional booking data and create no reservations. Input is validated for date and duration. React renders result text as text; Appsmith displays fixed result messages. Appsmith's **Make application public** option was enabled on 26 November 2026 ([screenshot](evidence/appsmith-public-access.png)). No user was invited; its invitation dialog warns that invitations may grant access to all applications in the workspace. The student confirmed that the deployed application opens in a Chrome incognito window without signing in.
 
 No XSS probe or accessibility audit was completed. Neither demonstration has a trusted server clock, persistent database, concurrent reservation control or server-side authorization. The Appsmith clock initializes at page load and does not continuously tick. These limits matter before either design could serve real bookings.
 
@@ -106,5 +112,5 @@ AI helped interpret the task, adapt the previous React application, configure Ap
 
 ## Submission status and required checks
 
-The [public repository](https://github.com/muenjmtst/software-engineering-practice-12) contains the React source, report, and Appsmith test screenshots. **Do not submit the ZIP or a OneDrive/WinRAR link.** The Appsmith public option is on; check the link from a signed-out browser before submission. Appsmith displayed “Successfully exported,” but the downloaded JSON was not available to add to the repository. A React running-interface screenshot is still missing because this environment denied the local server and blocked browser navigation to local files. The Appsmith T1–T8 response captures above are genuine. The student supplied class time and model; a separate application version was not recorded.
+The submission package includes the React source, report, Appsmith export JSON and test screenshots, and a running React screenshot. The student confirmed that the public Appsmith link opens in incognito mode. **Do not submit the ZIP or a OneDrive/WinRAR link.** Use the [public repository](https://github.com/muenjmtst/software-engineering-practice-12) once the final files have been pushed. No email or LMS submission has been sent. The student supplied class time and model; a separate application version was not recorded.
 
