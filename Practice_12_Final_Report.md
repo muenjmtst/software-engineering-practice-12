@@ -11,7 +11,7 @@
 
 As a student, I want to check whether a future time interval in Study Room A101 is free, without creating a reservation. This is a fictional, read-only demonstration. The same two daily bookings, 09:00–10:00 and 13:00–14:00, are used by both implementations. Intervals ending exactly when another booking starts are available.
 
-The [Appsmith demonstration](https://app.appsmith.com/app/smart-campus-room-checker-practice-12/page1-6b080721ac6b328c4f872bf6) is deployed privately. A grader needs workspace access to open it. The React/Vite source and automated tests are in the [public repository](https://github.com/muenjmtst/software-engineering-practice-12).
+The [Appsmith demonstration](https://app.appsmith.com/app/smart-campus-room-checker-practice-12/page1-6b080721ac6b328c4f872bf6) is deployed with **Make application public** enabled on 26 November 2026. The React/Vite source and automated tests are in the [public repository](https://github.com/muenjmtst/software-engineering-practice-12).
 
 ## Shared acceptance criteria
 
@@ -86,8 +86,8 @@ The following captures are consecutive portions of the same Appsmith Response pa
 | Construction | Extended the existing TypeScript/React application | Configured widgets and a JSObject in the browser |
 | Validation | Eight shared cases; 121 total tests, lint, typecheck and build | Eight JSObject assertions; four live interface outcomes observed |
 | Debugging | Local tests and build errors | JSObject Run response and result text |
-| Portability | Source archive and npm scripts | Private workspace application; export not captured |
-| Security | No backend, secrets or personal data | No datasource or secrets; public access is off |
+| Portability | Source archive and npm scripts | Public application link; export command succeeded, but the downloaded JSON was not captured in the repository |
+| Security | No backend, secrets or personal data | No datasource or secrets; application public access is on |
 | Measured time or cost | Not measured | Not measured |
 
 I recommend continuing the React version for further Smart Campus work because it retains the existing source and repeatable test suite. Appsmith provided a usable small visual demonstration. I cannot claim that either platform was faster or cheaper, because construction time and hosting costs were not measured.
@@ -96,7 +96,7 @@ The React interface accepts a manual clock override for same-day checks; Appsmit
 
 ## Security review and limitations
 
-Both demonstrations use fictional booking data and create no reservations. Input is validated for date and duration. React renders result text as text; Appsmith displays fixed result messages. Appsmith's public-sharing option was off when checked; no invitation was sent. Its sharing dialog warns that inviting a user may give access to all applications in the workspace, so the private URL is not evidence that a grader can open the app.
+Both demonstrations use fictional booking data and create no reservations. Input is validated for date and duration. React renders result text as text; Appsmith displays fixed result messages. Appsmith's **Make application public** option was enabled on 26 November 2026 ([screenshot](evidence/appsmith-public-access.png)). No user was invited; its invitation dialog warns that invitations may grant access to all applications in the workspace. Anonymous access was not checked from a separate account.
 
 No XSS probe or accessibility audit was completed. Neither demonstration has a trusted server clock, persistent database, concurrent reservation control or server-side authorization. The Appsmith clock initializes at page load and does not continuously tick. These limits matter before either design could serve real bookings.
 
@@ -106,5 +106,5 @@ AI helped interpret the task, adapt the previous React application, configure Ap
 
 ## Submission status and required checks
 
-The [public repository](https://github.com/muenjmtst/software-engineering-practice-12) now contains the React source, report, and Appsmith screenshots. **Do not submit the ZIP or a OneDrive/WinRAR link.** The Appsmith URL remains private; a publicly accessible live demo and Appsmith export are still required by the submission slide. A React running-interface screenshot is still missing because this environment denied the local server and blocked browser navigation to local files. The Appsmith T1–T8 response captures above are genuine. The student supplied class time and model; a separate application version was not recorded.
+The [public repository](https://github.com/muenjmtst/software-engineering-practice-12) contains the React source, report, and Appsmith test screenshots. **Do not submit the ZIP or a OneDrive/WinRAR link.** The Appsmith public option is on; check the link from a signed-out browser before submission. Appsmith displayed “Successfully exported,” but the downloaded JSON was not available to add to the repository. A React running-interface screenshot is still missing because this environment denied the local server and blocked browser navigation to local files. The Appsmith T1–T8 response captures above are genuine. The student supplied class time and model; a separate application version was not recorded.
 
